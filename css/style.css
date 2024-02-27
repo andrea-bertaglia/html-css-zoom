@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -11,18 +12,13 @@ img {
 
 /* COMMON */
 .wrapper {
-    display: flex;
     width: 100%;
     height: 100vh;
-
-    /* debug */
-    border: 5px solid red;
+    position: relative;
 }
 
 .flex {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .wrap {
@@ -30,36 +26,63 @@ img {
 }
 
 /* MAIN */
-.col {
-    height: 100%;
-
-    /* debug */
-    border: 1px solid black;
-    width: 100%;
-}
-
 .col.users {
     height: calc(100% - 100px);
     background-color: #000000;
-    padding: 30px;
-}
-
-.users-container {
-    height: 100%;
-    
-    /* debug */
-    background-color: aquamarine;
+    padding: 60px 10px;
 }
 
 .user {
     width: calc(100% / 7);
-    padding: 0 5px;
-
-    /* debug */
-    border: 1px solid red;
+    position: relative;
+    
+    border: 5px solid #000000;
 }
 
+.user > img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.tag {
+    color: #FFFFFF;
+    background-color: rgba(193, 193, 193, 0.3);
+    padding: 8px;
+    font-size: .8rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.tag-speaker-view {
+    color: #FFFFFF;
+    background-color: rgba(193, 193, 193, 0.3);
+    border-radius: 5px;
+    padding: 8px;
+    font-size: .8rem;
+    position: absolute;
+    top: 5px;
+    right: 40px;
+}
+
+.tag-speaker-arrows {
+    color: #FFFFFF;
+    background-color: rgba(193, 193, 193, 0.3);
+    border-radius: 5px;
+    padding: 8px;
+    font-size: .8rem;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+
 .col.tools {
+    width: 100%;
     height: 100px;
-    background-color: #3c3c3c;
+    background-color: #222222;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: #FFFFFF;
 }
