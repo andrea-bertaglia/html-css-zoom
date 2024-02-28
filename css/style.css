@@ -36,6 +36,7 @@ a {
     height: calc(100% - 100px);
     background-color: #000000;
     padding: 60px 10px;
+    overflow-y: auto;
 }
 
 .user {
